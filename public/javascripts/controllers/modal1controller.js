@@ -3,9 +3,8 @@
 
 
 angular.module('modalApp')
-    .controller('modal1controller',['modal1service',function($scope,modal1service){
+    .controller('modal1controller',function($scope){
 
         console.log("modal1controller start")
-        $scope.open = modal1service.open
 
-    }]);
+    });
