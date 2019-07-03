@@ -1,7 +1,9 @@
 'use strict';
 
-modalapp
-    .service('modal1service',function($ubimodal){
+angular.module('modalApp')
+    .service('modal1service',function($scope,$uibModal){
+
+        console.log("modal1service start")
 
         $scope.items = ['item1', 'item2', 'item3'];
     
@@ -52,7 +54,7 @@ modalapp
     });
 
 //$uibModalInstance是模态窗口的实例  
-modalapp
+angular.module('modalApp')
     .controller('Modal1InstanceCtrl', function ($scope, $uibModalInstance, items1) {
         $scope.items = items1;
         $scope.selected = {

@@ -4,9 +4,10 @@ var modalapp = angular.module('modalApp', [
     'ngRoute',
     'ngAnimate',
     'ui.bootstrap',
-    'modal1service'
 ]);
 
+
+console.log("before modalapp config")
 
 modalapp
     .config(['$routeProvider',function($routeProvider){
@@ -27,3 +28,5 @@ modalapp
             otherwise('/');
         console.log('log modalapp')
     }]);
+
+    console.log("after modalapp config")
